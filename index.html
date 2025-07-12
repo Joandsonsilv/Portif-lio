@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfólio</title>
+    <title>Portfólio - Joandson</title>
     <!--Bootstrap link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <!--Fim do link bootstrap-->
@@ -131,7 +131,7 @@
                                 rel="noopener noreferrer">
                                 <button><i class="bi bi-linkedin"></i></button>
                             </a>
-                            <a href="file:///C:/Users/Joand/Desktop/Currículo%20-%20Joandson%20Silva%202.pdf"
+                            <a href="file:///C:/Users/Joand/Downloads/joandson.silva%20-%20curriculo.pdf"
                                 target="_blank" rel="noopener noreferrer">
                                 <button><i class="bi bi-person-square"></i></button>
                             </a>
@@ -161,22 +161,27 @@
                 <h2 class="titulo">
                     ENTRE EM <span>CONTATO.</span>
                 </h2>
-                <form action="https://formsubmit.co/joandson06@outlook.com.br" method="POST">
-                    <!-- Desativa o CAPTCHA do FormSubmit -->
+                <form action="https://formsubmit.co/joandson06@outlook.com" method="POST">
+                    <!-- Proteção contra bots -->
+                    <input type="hidden" name="_honey" style="display:none">
+                    <!-- Desativa ou ativa CAPTCHA conforme desejar -->
                     <input type="hidden" name="_captcha" value="false">
+                    <!-- Assunto do e-mail recebido -->
+                    <input type="hidden" name="_subject" value="💬 Nova mensagem do site">
+                    <!-- Redirecionamento após envio -->
+                    <input type="hidden" name="_next" value="https://SEUSITE.com/obrigado.html">
 
-                    <!-- Opcional: redirecionar para uma página de agradecimento -->
-                    <!-- <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> -->
-
-                    <input type="text" name="nome" placeholder="SEU NOME COMPLETO:" required />
-                    <input type="email" name="email" placeholder="DIGITE SEU EMAIL:" required />
-                    <input type="text" name="telefone" placeholder="DIGITE SEU NÚMERO DE CONTATO:" />
+                    <!-- Campos preenchíveis -->
+                    <input type="text" name="nome" placeholder="SEU NOME COMPLETO:" required>
+                    <input type="email" name="email" placeholder="DIGITE SEU EMAIL:" required>
+                    <input type="text" name="telefone" placeholder="DIGITE SEU NÚMERO DE CONTATO:">
                     <textarea name="mensagem" placeholder="SUA MENSAGEM:" required></textarea>
 
                     <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR" />
+                        <input type="submit" value="ENVIAR">
                     </div>
                 </form>
+
             </div>
         </section>
     </main>

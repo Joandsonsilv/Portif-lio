@@ -48,8 +48,6 @@ form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #6d4c4c;
 }
 
-
-
 /* ESTILO DO CABEÇALHO */
 
 header {
@@ -69,26 +67,19 @@ header a {
     transition: .2s;
 }
 
-/* Quando o usuario passar por cima da celula vai alterar a cor */
 header a:hover {
     color: #fff;
     transform: scale(1.05);
 }
 
-/* Retirar as bolinhas de lista e colocar uma do lado da outra */
 header nav ul {
     list-style-type: none;
 }
 
-/* Deixar uma do lado da outra */
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
-
-
-
-
 
 /*ESTILO DO TOPO*/
 
@@ -100,7 +91,6 @@ section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
-
 }
 
 .topo-do-site h1 {
@@ -119,6 +109,7 @@ section.topo-do-site .flex {
     margin: 40px 0px;
     text-align: center;
 }
+
 /*estilo das especialidades*/
 
 section.especialidades {
@@ -135,7 +126,6 @@ section.especialidades .flex {
     margin-top: 45px;
     border-radius: 40px;
     transition: 2.01;
-
 }
 
 .especialidades .especialidades-box:hover {
@@ -171,9 +161,7 @@ section.sobre .flex {
 .sobre .txt-sobre h2 {
     font-size: 65px;
     line-height: 60px;
-    /*distancia entre as linhas*/
     margin-bottom: 30px;
-    /*distancia entre o titulo e o paragrafo*/
 }
 
 .sobre .txt-sobre h2 span {
@@ -183,22 +171,17 @@ section.sobre .flex {
 
 .sobre .txt-sobre p {
     margin: 20px 0px;
-    /*distancia dos paragrafos*/
     text-align: justify;
-    /*não ter linhas quebradas*/
 }
 
 .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    /*para a bordar ficar redonda*/
     border: none;
     background-color: aqua;
     font-size: 15px;
-    /*tamanho*/
     cursor: pointer;
-    /*para o mouse virar o dedinho*/
     margin: 0 5%;
     transition: .2;
 }
@@ -209,56 +192,36 @@ section.sobre .flex {
 
 /*ESTILO DO PORTIFOLIO*/
 
-/*ESTILO DO PORTIFOLIO*/
-
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff56;
-    /*deslocamento horizontal, deslocamento vertical, desfoque e espalhamento(tamanho da sombra) */
 }
 
 section.portfolio .flex {
     display: flex;
-    /*deixar os elementos um do lado do outro*/
     flex-wrap: wrap;
-    /*quebrar linha caso a tela seja pequena*/
     justify-content: center;
-    /*centralizar os elementos no centro*/
     gap: 80px;
-    /*espaçamento entre os elementos*/
     margin-top: 40px;
-    /*distância entre o título e os itens*/
 }
 
 .img-port {
     width: 500px;
-    /*largura da caixa do projeto*/
     height: 930px;
-    /*altura da caixa do projeto*/
     background-color: rgba(76, 125, 125, 0.263);
-    /*cor de fundo (pode ser trocada por imagem depois)*/
     border-radius: 10px;
-    /*deixar as bordas arredondadas*/
     transition: all 0.2s;
-    /*animação suave ao passar o mouse*/
     cursor: pointer;
-    /*ao passar o mouse, vira o "dedinho"*/
     background-size: cover;
-    /*se usar imagem, ela vai cobrir toda a área*/
     background-position: center;
-    /*centraliza a imagem*/
     position: relative;
     transition: 5s;
 }
 
-/*Quando passar o mouse em cima da imagem*/
 .img-port:hover {
     transform: scale(1.05);
-    /*aumenta levemente o tamanho*/
     box-shadow: 0 0 10px aqua;
-    /*coloca uma sombra com cor azul ao redor*/
     background-position: 100% 100%;
-
 }
 
 .overlay {
@@ -275,13 +238,11 @@ section.portfolio .flex {
     color: #353131;
     opacity: 0;
     transition: 5s;
-
 }
 
 .overlay:hover {
     opacity: 1;
 }
-
 
 /*ESTILO DO FORMULARIO*/
 
@@ -297,7 +258,6 @@ form {
     flex-direction: column;
     gap: 10px;
     margin-top: 60px;
-
 }
 
 form input,
@@ -329,16 +289,13 @@ form .btn-enviar input {
     font-weight: 70px;
     cursor: pointer;
     transition: 2s;
-
 }
-
 
 /*ESTILO DO RODAPE*/
 
 footer {
     padding: 60px 4%;
     box-shadow: 0 0 40px 10px #ffffff56;
-    /*deslocamento horizontal, deslocamento vertical, desfoque e espalhamento(tamanho da sombra) */
 }
 
 footer .flex {
@@ -357,96 +314,7 @@ footer .line-footer p i {
 
 footer .line-footer p a {
     color: #fff;
-
 }
-
-@media screen and (max-width: 1024) {
-
-    /*classe geral*/
-    .flex {
-        flex-direction: column-reverse;
-    }
-
-    h2.titulo {
-        font-size: 28px;
-        line-height: 30px;
-    }
-
-    /*CABEÇALHO*/
-    .menu-desktop,
-    .btn-contato {
-        display: none;
-    }
-
-    /*topo do site*/
-
-    section.topo-do-site {
-        padding: 20px 8%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 30px;
-    }
-
-    /*estilo das especialidades*/
-
-    section.especialidades {
-        padding: 40px 8%;
-    }
-
-    /*sobre*/
-
-    section.sobre {
-        padding: 80px 8%;
-    }
-
-    .sobre .txt-sobre h2 {
-        font-size: 34px;
-        line-height: 35px;
-        /*distancia entre as linhas*/
-        text-align: center;
-
-    }
-
-    .btn-social {
-        text-align: center;
-    }
-
-    /*portifolio*/
-
-    section.portfolio {
-        padding: 80px 8%;
-
-    }
-
-    .img-port {
-        width: 100%;
-        max-width: 360px;
-        height: 930px;
-        margin: 0 auto;
-
-    }
-
-    section.portfolio .flex {
-        gap: 60px;
-
-    }
-
-    /*rodape*/
-
-    footer .flex {
-    flex-direction: column;
-    }
-
-    footer .line-footer {
-        text-align: center;
-    }
-
-
-
-}
-
-/* terminal conf */
 
 /* ===== Terminal Interativo ===== */
 
@@ -479,7 +347,7 @@ footer .line-footer p a {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5em;
-    color: white; /* texto padrão branco */
+    color: white;
 }
 
 #terminal-output {
@@ -488,14 +356,13 @@ footer .line-footer p a {
     overflow-y: auto;
     white-space: pre-wrap;
     margin-bottom: 20px;
-    color: white; /* texto padrão branco */
+    color: white;
 }
 
-/* Estilo para comandos */
 #terminal-output .comandos {
     color: aqua;
     font-weight: bold;
-    white-space: nowrap; /* para não quebrar linha */
+    white-space: nowrap;
 }
 
 .terminal-input-line {
@@ -522,4 +389,122 @@ footer .line-footer p a {
 
 #terminal-input::placeholder {
     color: aqua;
+}
+
+/* ===== Responsividade ===== */
+
+@media screen and (max-width: 1024px) {
+    .flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    header .menu-desktop,
+    header .btn-contato {
+        display: none;
+    }
+
+    .topo-do-site h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .topo-do-site .txt-topo-do-site p {
+        text-align: center;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    section.topo-do-site,
+    section.especialidades,
+    section.sobre,
+    section.portfolio,
+    section.formulario,
+    footer {
+        padding: 40px 8%;
+    }
+
+    .especialidades .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .especialidades .especialidades-box {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 3/4;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .terminal .interface {
+        padding: 0;
+    }
+
+    #terminal-container {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #terminal-output {
+        max-height: 200px;
+        font-size: 14px;
+    }
+
+    .terminal-input-line {
+        flex-direction: row;
+    }
+
+    .prompt {
+        font-size: 14px;
+    }
+
+    #terminal-input {
+        font-size: 14px;
+    }
 }
