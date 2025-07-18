@@ -485,19 +485,29 @@ footer .line-footer p a {
         padding: 0;
     }
 
+    /* ===== ALTERAÇÕES PARA TERMINAL MOBILE ===== */
+
     #terminal-container {
         max-width: 100%;
+        width: 100%; /* ADICIONADO para ocupar toda largura */
+        box-sizing: border-box; /* ADICIONADO para evitar overflow por padding */
         font-size: 14px;
         padding: 15px;
+        overflow-x: auto; /* ADICIONADO para permitir scroll horizontal se necessário */
+        white-space: pre-wrap !important; /* garante quebra de linha */
+        word-wrap: break-word; /* quebra palavras longas */
     }
 
     #terminal-output {
         max-height: 200px;
         font-size: 14px;
+        word-break: break-word; /* força quebra dentro de palavras longas */
     }
 
     .terminal-input-line {
-        flex-direction: row;
+        flex-direction: row; /* já tinha */
+        flex-wrap: nowrap; /* ADICIONADO para evitar quebra da linha */
+        gap: 5px; /* reduzido gap para caber melhor */
     }
 
     .prompt {
@@ -506,9 +516,10 @@ footer .line-footer p a {
 
     #terminal-input {
         font-size: 14px;
+        min-width: 0; /* ADICIONADO para flexbox */
+        flex-grow: 1; /* ADICIONADO para ocupar espaço */
     }
 }
-
 
 html {
   scroll-behavior: smooth;
