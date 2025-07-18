@@ -15,28 +15,28 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="#inicio">
                     <img src="images/logo.png" alt="Logo do Portfólio" width="150" />
                 </a>
             </div>
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <button>Contato</button>
+                <button onclick="location.href='#contato'">Contato</button>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section id="inicio" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-do-site">
@@ -49,7 +49,7 @@
                         </p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#contato">
                                 <button>Entre em Contato</button>
                             </a>
                         </div>
@@ -59,7 +59,7 @@
         </section>
 
         <!-- Seção de Especialidades -->
-        <section class="especialidades">
+        <section id="especialidades" class="especialidades">
             <div class="interface">
                 <h2 class="titulo">
                     MINHAS <span>ESPECIALIDADES.</span>
@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre"></div>
@@ -131,7 +131,7 @@
                                 rel="noopener noreferrer">
                                 <button><i class="bi bi-linkedin"></i></button>
                             </a>
-                            <a href="file:///C:/Users/Joand/Downloads/joandson.silva%20-%20curriculo.pdf"
+                            <a href="file:///C:/Users/Joand/Downloads/Curriculo%20-%20Joandson%20SIlva1.pdf"
                                 target="_blank" rel="noopener noreferrer">
                                 <button><i class="bi bi-person-square"></i></button>
                             </a>
@@ -141,7 +141,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="interface">
                 <h2 class="titulo">
                     MEU <span>PRIMEIRO PROJETO EM INGLES.</span>
@@ -156,7 +156,7 @@
         </section>
 
         <!-- FORMULÁRIO COM FUNCIONALIDADE CORRIGIDA -->
-        <section class="formulario">
+        <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">
                     ENTRE EM <span>CONTATO.</span>
@@ -218,77 +218,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="line-footer">
-                    <p>
-                        <i class="bi bi-envelope"></i>
-                        <a href="mailto:joandson06@outlook.com.br">joandson06@outlook.com.br</a>
-                    </p>
-                </div>
+
+                <p class="copyright">
+                    Desenvolvido por <span>Joandson José da Silva.</span> 2023 © Todos os direitos reservados.
+                </p>
             </div>
         </div>
     </footer>
 
-    <script>
-        const terminalInput = document.getElementById('terminal-input');
-        const terminalOutput = document.getElementById('terminal-output');
-
-        const commands = {
-            contato: () => {
-                return (
-                    'Email: joandson06@outlook.com.br\n' +
-                    'LinkedIn: http://linkedin.com/in/joandson-silva-43566a282\n' +
-                    'Telefone: (insira seu número de contato aqui)'
-                );
-            },
-            habilidades: () => {
-                return (
-                    'Aprendizado Contínuo, Foco e Determinação, Desenvolvimento Web (HTML, CSS, JS, React)'
-                );
-            },
-            cursos: () => {
-                return (
-                    'Técnico em Administração, Pacote Office, Cursando Java e Python na Udemy'
-                );
-            },
-            objetivo: () => {
-                return (
-                    'Quero estagiar para ganhar experiência prática, desenvolver habilidades profissionais e contribuir com soluções na área de TI. Acredito que o estágio é fundamental para aplicar o conhecimento e crescer na carreira.'
-                );
-            },
-            clear: () => {
-                terminalOutput.innerHTML = '';
-                return '';
-            }
-        };
-
-        function printToTerminal(text) {
-            terminalOutput.innerHTML += '<br />' + text.replace(/\n/g, '<br />');
-            terminalOutput.scrollTop = terminalOutput.scrollHeight;
-        }
-
-        terminalInput.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                const input = terminalInput.value.trim().toLowerCase();
-                if (input === '') {
-                    return;
-                }
-
-                if (input === 'clear') {
-                    commands.clear();
-                } else {
-                    printToTerminal('> ' + input);
-
-                    if (commands[input]) {
-                        printToTerminal(commands[input]());
-                    } else {
-                        printToTerminal('Comando não reconhecido. Tente: contato, habilidades, quem sou eu, cursos, objetivo, clear.');
-                    }
-                }
-
-                terminalInput.value = '';
-            }
-        });
-    </script>
+    <script src="terminal.js"></script>
 </body>
 
 </html>

@@ -508,3 +508,8 @@ footer .line-footer p a {
         font-size: 14px;
     }
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
