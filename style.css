@@ -28,7 +28,7 @@ body {
     border: 0;
     border-radius: 80px;
     cursor: pointer;
-    transition: 0.2;
+    transition: 0.2s;
 }
 
 h2.titulo {
@@ -43,7 +43,7 @@ h2.titulo span {
 
 button:hover,
 form .btn-enviar input:hover {
-    transition: .2s;
+    transition: 0.2s;
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #6d4c4c;
 }
@@ -64,7 +64,7 @@ header a {
     color: rgb(67, 67, 67);
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 header a:hover {
@@ -125,7 +125,7 @@ section.especialidades .flex {
     padding: 40px;
     margin-top: 45px;
     border-radius: 40px;
-    transition: 2.01;
+    transition: 0.2s;
 }
 
 .especialidades .especialidades-box:hover {
@@ -183,7 +183,7 @@ section.sobre .flex {
     font-size: 15px;
     cursor: pointer;
     margin: 0 5%;
-    transition: .2;
+    transition: 0.2s;
 }
 
 .sobre {
@@ -286,9 +286,9 @@ form .btn-enviar input {
     width: 120px;
     background-color: aqua;
     color: #000;
-    font-weight: 70px;
+    font-weight: 700;
     cursor: pointer;
-    transition: 2s;
+    transition: 0.2s;
 }
 
 /*ESTILO DO RODAPE*/
@@ -394,6 +394,12 @@ footer .line-footer p a {
 /* ===== Responsividade ===== */
 
 @media screen and (max-width: 1024px) {
+    .interface {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
     .flex {
         flex-direction: column;
         gap: 40px;
@@ -424,6 +430,18 @@ footer .line-footer p a {
         padding: 40px 8%;
     }
 
+    section.sobre {
+        padding: 60px 4%;
+    }
+
+    section.portfolio {
+        padding: 60px 4%;
+    }
+
+    section.formulario {
+        padding: 60px 4%;
+    }
+
     .especialidades .flex {
         flex-direction: column;
         gap: 30px;
@@ -451,6 +469,13 @@ footer .line-footer p a {
         height: auto;
         aspect-ratio: 3/4;
         margin: 0 auto;
+    }
+
+    .img-sobre {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
     }
 
     section.portfolio .flex {
@@ -485,29 +510,27 @@ footer .line-footer p a {
         padding: 0;
     }
 
-    /* ===== ALTERAÇÕES PARA TERMINAL MOBILE ===== */
-
     #terminal-container {
         max-width: 100%;
-        width: 100%; /* ADICIONADO para ocupar toda largura */
-        box-sizing: border-box; /* ADICIONADO para evitar overflow por padding */
+        width: 100%;
+        box-sizing: border-box;
         font-size: 14px;
         padding: 15px;
-        overflow-x: auto; /* ADICIONADO para permitir scroll horizontal se necessário */
-        white-space: pre-wrap !important; /* garante quebra de linha */
-        word-wrap: break-word; /* quebra palavras longas */
+        overflow-x: auto;
+        white-space: pre-wrap !important;
+        word-wrap: break-word;
     }
 
     #terminal-output {
         max-height: 200px;
         font-size: 14px;
-        word-break: break-word; /* força quebra dentro de palavras longas */
+        word-break: break-word;
     }
 
     .terminal-input-line {
-        flex-direction: row; /* já tinha */
-        flex-wrap: nowrap; /* ADICIONADO para evitar quebra da linha */
-        gap: 5px; /* reduzido gap para caber melhor */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
     }
 
     .prompt {
@@ -516,11 +539,11 @@ footer .line-footer p a {
 
     #terminal-input {
         font-size: 14px;
-        min-width: 0; /* ADICIONADO para flexbox */
-        flex-grow: 1; /* ADICIONADO para ocupar espaço */
+        min-width: 0;
+        flex-grow: 1;
     }
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
