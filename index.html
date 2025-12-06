@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfólio - Joandson</title>
+
     <!--Bootstrap link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
@@ -68,9 +69,6 @@
                         <h3>Aprendizado Contínuo</h3>
                         <p>
                             Tenho paixão por aprender coisas novas, especialmente na área de tecnologia.
-                            Estou sempre estudando novas linguagens, ferramentas e conceitos para evoluir
-                            como desenvolvedor. Acredito que o conhecimento é a chave para resolver
-                            qualquer problema.
                         </p>
                     </div>
 
@@ -78,10 +76,7 @@
                         <i class="bi bi-activity"></i>
                         <h3>Foco e Determinação</h3>
                         <p>
-                            Tudo o que faço, faço com dedicação. Seja um projeto simples ou algo mais
-                            complexo, busco sempre dar o meu melhor e entregar um resultado de qualidade.
-                            Meu objetivo é crescer na área de TI e construir uma carreira sólida, ajudando
-                            pessoas e empresas com soluções criativas e funcionais.
+                            Tudo o que faço, faço com dedicação.
                         </p>
                     </div>
 
@@ -89,10 +84,7 @@
                         <i class="bi bi-display"></i>
                         <h3>Desenvolvimento Web</h3>
                         <p>
-                            Crio sites modernos, responsivos e com boa performance. Gosto de transformar
-                            ideias em páginas funcionais e bonitas, utilizando tecnologias como HTML, CSS,
-                            JavaScript e frameworks como React. Meu foco é entregar soluções práticas,
-                            eficientes e com boa experiência para o usuário.
+                            Crio sites modernos, responsivos e com boa performance.
                         </p>
                     </div>
                 </div>
@@ -109,23 +101,14 @@
                             <span>SOU O JOANDSON.</span>
                         </h2>
                         <p>
-                            Olá! Meu nome é Joandson José da Silva, tenho 19 anos e atualmente sou estudante de
-                            Análise e Desenvolvimento de Sistemas. Escolhi a área de TI por ser apaixonado por
-                            tecnologia, lógica e por tudo o que envolve inovação.
+                            Olá! Meu nome é Joandson José da Silva, tenho 19 anos.
                         </p>
-                        <p>
-                            Sou uma pessoa determinada, sempre buscando aprender mais e me desenvolver tanto
-                            pessoal quanto profissionalmente. Acredito que com esforço e dedicação posso
-                            alcançar grandes conquistas, não só para realizar meus sonhos, mas também para
-                            retribuir tudo o que minha família já fez por mim.
-                        </p>
+
                         <div class="btn-social">
-                            <a href="http://linkedin.com/in/joandson-silva-43566a282" target="_blank"
-                                rel="noopener noreferrer">
+                            <a href="http://linkedin.com/in/joandson-silva-43566a282" target="_blank">
                                 <button><i class="bi bi-linkedin"></i></button>
                             </a>
-                            <a href="Curriculo - Joandson SIlva12.pdf"
-                                target="_blank" rel="noopener noreferrer">
+                            <a href="Curriculo - Joandson SIlva12.pdf" target="_blank">
                                 <button><i class="bi bi-person-square"></i></button>
                             </a>
                         </div>
@@ -140,25 +123,20 @@
                     MEU <span>PRIMEIRO PROJETO EM INGLES:</span>
                 </h2>
                 <div class="flex">
-                    <div class="img-port"
-                        style="background-image: url(images/Index\ -\ \ CORRETO\ Conteúdo\ \(1\)-1.png);">
-                        <div class="overlay">LINGUAGENS DE PROGRAMAÇÃO.</div>
-                    </div>
+                    <div class="img-port"></div>
                 </div>
             </div>
         </section>
 
+        <!-- FORMULÁRIO EMAILJS CORRIGIDO -->
         <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">
                     ENTRE EM <span>CONTATO.</span>
                 </h2>
-                <form action="https://formsubmit.co/joandson06@outlook.com" method="POST">
-                    <input type="hidden" name="_honey" style="display:none" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_subject" value="💬 Nova mensagem do site" />
-                    <input type="hidden" name="_next" value="https://SEUSITE.com/obrigado.html" />
 
+                <!-- ✅ FORM CORRIGIDO -->
+                <form id="form">
                     <input type="text" name="nome" placeholder="SEU NOME COMPLETO:" required />
                     <input type="email" name="email" placeholder="DIGITE SEU EMAIL:" required />
                     <input type="text" name="telefone" placeholder="DIGITE SEU NÚMERO DE CONTATO:" />
@@ -168,141 +146,60 @@
                         <input type="submit" value="ENVIAR" />
                     </div>
                 </form>
+
             </div>
         </section>
     </main>
-
-    <section class="terminal">
-        <div class="interface">
-            <h2 class="titulo">TERMINAL INTERATIVO</h2>
-            <div id="terminal-container">
-                <div id="terminal-output">
-                    Bem-vindo ao terminal interativo!<br />
-                    Digite um dos comandos abaixo e pressione Enter:<br />
-                    <strong>contato</strong> | <strong>habilidades</strong> | <strong>quem sou eu</strong> |
-                    <strong>cursos</strong> | <strong>objetivo</strong> | <strong>clear</strong>
-                </div>
-                <div class="terminal-input-line">
-                    <span class="prompt">&gt;</span>
-                    <input type="text" id="terminal-input" autocomplete="off" placeholder="Digite um comando..." />
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="images/logo.png" alt="Logo do Portfólio" width="150" />
-                        <!-- Adicionado email no rodapé com link -->
-                        <p><a href="mailto:Joandson06@outlook.com" style="color: #fff; text-decoration: none; font-size: 0.9rem; margin-top: 5px; display: block;">Joandson06@outlook.com</a></p>
+                        <img src="images/logo.png" width="150" />
+                        <p>
+                            <a href="mailto:Joandson06@outlook.com"
+                                style="color: #fff; text-decoration: none;">
+                                Joandson06@outlook.com
+                            </a>
+                        </p>
                     </div>
                     <div class="btn-social">
-                        <a href="http://linkedin.com/in/joandson-silva-43566a282" target="_blank" rel="noopener noreferrer">
+                        <a href="http://linkedin.com/in/joandson-silva-43566a282" target="_blank">
                             <button><i class="bi bi-linkedin"></i></button>
                         </a>
                     </div>
                 </div>
                 <p class="copyright">
-                    Desenvolvido por <span>Joandson José da Silva.</span> 2023 © Todos os direitos reservados.
+                    Desenvolvido por <span>Joandson José da Silva.</span> 2023 ©
                 </p>
             </div>
         </div>
     </footer>
 
+    <!-- ✅ EMAILJS ÚNICO E CORRETO -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <script>
-        const terminalInput = document.getElementById("terminal-input");
-        const terminalOutput = document.getElementById("terminal-output");
+        (function () {
+            emailjs.init("bWX0j7ki62WXPXuTa");
+        })();
 
-        // Menu inicial do terminal para reaparecer no clear
-        const menuInicial = `
-            Bem-vindo ao terminal interativo!<br />
-            Digite um dos comandos abaixo e pressione Enter:<br />
-            <strong>contato</strong> | <strong>habilidades</strong> | <strong>quem sou eu</strong> |
-            <strong>cursos</strong> | <strong>objetivo</strong> | <strong>clear</strong>
-        `;
+        document.getElementById("form").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        terminalInput.addEventListener("keydown", function (event) {
-            if (event.key === "Enter") {
-                const command = terminalInput.value.trim().toLowerCase();
-
-                if (command === "clear") {
-                    // Limpa e exibe o menu inicial novamente
-                    terminalOutput.innerHTML = menuInicial;
-                    terminalInput.value = "";
-                    return;
-                }
-
-                let response = "";
-
-                switch (command) {
-                    case "contato":
-                        response = `
-                            <strong>CONTATO</strong><br/>
-                            • Telefone: (11) 91678-2104<br/>
-                            • E-mail: Joandson06@outlook.com<br/>
-                            • Endereço: Guarulhos, SP
-                        `;
-                        break;
-
-                    case "habilidades":
-                        response = `
-                            <strong>HABILIDADES</strong><br/>
-                            • Proativo, Dinâmico, Analítico<br/>
-                            • Boa Comunicação e Empenho<br/>
-                            • Coord. de Esportes (Grêmio Estudantil)<br/>
-                            • Conhecimento em AWS, Azure, Banco de Dados<br/>
-                            • Python, HTML, CSS<br/>
-                            • Organização e arquitetura de computadores<br/>
-                            • Power BI (Avançado)
-                            • Excel (Avançado)
-                        `;
-                        break;
-
-                    case "quem sou eu":
-                        response = `
-                            <strong>SOBRE MIM</strong><br/>
-                            • Estudante de Análise e Desenvolvimento de Sistemas<br/>
-                            • 19 anos, apaixonado por tecnologia e inovação<br/>
-                            • Determinado, curioso e focado em crescer na área de TI<br/>
-                            • Gosto de aprender, resolver problemas e desafios<br/>
-                            • Valoriza família e momentos simples da vida
-                        `;
-                        break;
-
-                    case "cursos":
-                        response = `
-                            <strong>CURSOS</strong><br/>
-                            • Inglês (Intermediário) - em andamento<br/>
-                            • Python (Udemy) - em andamento<br/>
-                            • SQL (Udemy) - em andamento<br/>
-                            • AWS (Udemy) - em andamento<br/>
-                            • Java (Udemy) - em andamento<br/>
-                            • Fundamentos em Power BI (Fundação Bradesco)<br/>
-                            • Técnico em Administração (Saber)<br/>
-                            • Pacote Office Intermediário (Bradesco)
-                        `;
-                        break;
-
-                    case "objetivo":
-                        response = `
-                            <strong>OBJETIVO PROFISSIONAL</strong><br/>
-                            Estágio na área de Tecnologia em Dados
-                        `;
-                        break;
-
-                    default:
-                        response = `<em>Comando não reconhecido. Tente: contato, habilidades, quem sou eu, cursos, objetivo, clear.</em>`;
-                }
-
-                terminalOutput.innerHTML += `<br/><br/>&gt; ${command}<br/>${response}`;
-                terminalInput.value = "";
-                terminalOutput.scrollTop = terminalOutput.scrollHeight;
-            }
+            emailjs.sendForm(
+                "service_cuvpj3w",
+                "template_jdj942d",
+                this
+            ).then(function () {
+                alert("Mensagem enviada com sucesso!");
+                document.getElementById("form").reset();
+            }, function (error) {
+                alert("Erro ao enviar: " + error.text);
+            });
         });
     </script>
-</body>
 
+</body>
 </html>
